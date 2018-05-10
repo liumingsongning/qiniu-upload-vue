@@ -9,7 +9,7 @@ npm install qiniu-upload-vue
 2,示例代码
 ```
  <upload 
-      :uptoken='uptoken'   //这是从后端获取的七牛token 可以参考另一项目laravel后端提供token[laravelQiniu]:https://github.com/liumingsongning/laravelQiniu
+      :uptoken='uptoken'   //这是从后端获取的七牛token 可以参考另一项目laravel后端提供token[laravelQiniu](https://github.com/liumingsongning/laravelQiniu)
       :filename='filename' //自定义上传文件前缀，因为七牛上传是不分目录的，定义了这个变量上传后效果大体是这样'http://www.baidu.com/filename/原文件名
       browse_button='pickfiles' //指定上传按钮id，随便定义
       domain='http://p8htjuaac.bkt.clouddn.com' //七牛提供的domain
@@ -32,7 +32,7 @@ npm install qiniu-upload-vue
   mounted() {
       let _this = this;
       this.ajax
-      .get("/test")  //此路由后台代码参考[laravelQiniu]:https://github.com/liumingsongning/laravelQiniu
+      .get("/test")  //此路由后台代码参考[laravelQiniu](https://github.com/liumingsongning/laravelQiniu)
       .then(function(response) {
           _this.uptoken = response.data.token;
       })
